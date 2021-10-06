@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin_small">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_result_question_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/view_margin_small"
+            android:layout_marginBottom="@dimen/view_margin_small"
+            android:text="@string/question_r"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_result_correct_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_result_question_item"
+            android:layout_marginStart="@dimen/view_margin"
+            android:text="@string/correct_ans"
+            android:textColor="@color/primaryColor"
+            android:textSize="@dimen/txt_size" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_result_ua_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_result_correct_item"
+            android:layout_marginStart="@dimen/view_margin"
+            android:text="@string/your_ans"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_line"
+            android:layout_below="@id/txt_result_ua_item"
+            android:layout_marginTop="@dimen/view_margin_small"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+</layout>

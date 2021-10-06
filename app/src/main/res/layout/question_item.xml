@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/view_margin"
+        app:cardCornerRadius="@dimen/test_card_radius"
+        app:cardElevation="@dimen/elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_page_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/view_margin_small"
+                android:background="@drawable/page_no_bg"
+                android:paddingStart="@dimen/view_padding"
+                android:paddingTop="@dimen/view_padding_small"
+                android:paddingEnd="@dimen/view_padding"
+                android:paddingBottom="@dimen/view_padding_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_size_big" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_question_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_page_no"
+                android:layout_margin="@dimen/view_margin"
+                android:text="@string/question"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggle_grp_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/lin_nav_item"
+                android:layout_below="@id/txt_question_item"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginTop="@dimen/view_margin"
+                android:layout_marginEnd="@dimen/view_margin"
+                android:orientation="vertical"
+                app:selectionRequired="true"
+                app:singleSelection="true">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_option_a"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:autoSizeMaxTextSize="@dimen/txt_size"
+                    android:autoSizeMinTextSize="@dimen/txt_mini"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/option_a" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_option_b"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:autoSizeMaxTextSize="@dimen/txt_size"
+                    android:autoSizeMinTextSize="@dimen/txt_mini"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/option_b" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_option_c"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:autoSizeMaxTextSize="@dimen/txt_size"
+                    android:autoSizeMinTextSize="@dimen/txt_mini"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/option_c" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_option_d"
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_margin"
+                    android:autoSizeMaxTextSize="@dimen/txt_size"
+                    android:autoSizeMinTextSize="@dimen/txt_mini"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/option_d" />
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+            <LinearLayout
+                android:id="@+id/lin_nav_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_previous_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/previous"
+                    app:cornerRadius="@dimen/btn_radius"
+                    app:icon="@drawable/ic_back" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_next_item"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/view_margin"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/next"
+                    app:cornerRadius="@dimen/btn_radius"
+                    app:icon="@drawable/ic_next"
+                    app:iconGravity="end" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

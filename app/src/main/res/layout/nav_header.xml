@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/nav_header_size"
+        android:background="@color/primaryColor"
+        android:padding="@dimen/view_padding">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_pro_nav"
+            android:layout_width="@dimen/nav_img_size"
+            android:layout_height="@dimen/nav_img_size"
+            android:layout_above="@id/txt_uname_nav"
+            app:srcCompat="@drawable/ic_account_circle" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_uname_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/txt_email_nav"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_big" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_email_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/email_address"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</layout>

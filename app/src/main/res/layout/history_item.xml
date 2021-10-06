@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin_small"
+        app:cardCornerRadius="@dimen/elevation"
+        app:cardElevation="@dimen/elevation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_sub_item"
+                android:layout_width="@dimen/history_img_size"
+                android:layout_height="@dimen/history_img_size"
+                android:background="@color/primaryColor"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_sub_title_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginTop="@dimen/view_margin_small"
+                android:layout_toStartOf="@id/circular_indicator_item"
+                android:layout_toEndOf="@id/img_sub_item"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/txt_size"
+                tools:text="@string/app_name" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_date_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_sub_title_item"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginTop="@dimen/view_margin_small"
+                android:layout_toStartOf="@id/circular_indicator_item"
+                android:layout_toEndOf="@id/img_sub_item"
+                android:textColor="@color/black"
+                tools:text="@string/app_name" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/circular_indicator_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/view_margin_small"
+                app:indicatorSize="@dimen/his_ind_size"
+                tools:progress="99" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txt_progress_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/circular_indicator_item"
+                android:layout_alignTop="@id/circular_indicator_item"
+                android:layout_alignEnd="@id/circular_indicator_item"
+                android:layout_alignBottom="@id/circular_indicator_item"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/txt_size" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

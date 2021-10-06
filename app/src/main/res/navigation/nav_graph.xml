@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.brain.courses_app.view.fragments.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.brain.courses_app.view.fragments.AboutFragment"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/rateUsFragment"
+        android:name="com.brain.courses_app.view.fragments.RateUsFragment"
+        android:label="@string/rate_us"
+        tools:layout="@layout/fragment_rate_us" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.brain.courses_app.view.fragments.DetailFragment"
+        android:label="@string/details"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <argument
+            android:name="subject"
+            app:argType="com.brain.courses_app.model.Subject" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.brain.courses_app.view.fragments.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.brain.courses_app.view.fragments.TestFragment"
+        android:label="@string/test"
+        tools:layout="@layout/fragment_test">
+        <argument
+            android:name="subject"
+            app:argType="com.brain.courses_app.model.Subject" />
+        <action
+            android:id="@+id/action_testFragment_to_testResultFragment"
+            app:destination="@id/testResultFragment"
+            app:popUpTo="@id/detailFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/testResultFragment"
+        android:name="com.brain.courses_app.view.fragments.TestResultFragment"
+        android:label="@string/result"
+        tools:layout="@layout/fragment_test_result">
+        <argument
+            android:name="userAnswer"
+            app:argType="com.brain.courses_app.model.UserAnswer[]" />
+        <argument
+            android:name="dt"
+            app:argType="string" />
+        <argument
+            android:name="subName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.brain.courses_app.view.fragments.HistoryFragment"
+        android:label="Test History"
+        tools:layout="@layout/fragment_history" >
+        <action
+            android:id="@+id/action_historyFragment_to_testResultFragment"
+            app:destination="@id/testResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.brain.courses_app.view.fragments.NotificationFragment"
+        android:label="@string/notification"
+        tools:layout="@layout/fragment_notification" />
+</navigation>

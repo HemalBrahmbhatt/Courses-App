@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.fragments.ProfileFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lin_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColor"
+                android:orientation="vertical">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/img_pro_pic"
+                    android:layout_width="@dimen/img_size"
+                    android:layout_height="@dimen/img_size"
+                    app:srcCompat="@drawable/ic_account_circle" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_name_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:text="@string/name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_big" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txt_email_pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_margin"
+                    android:layout_marginBottom="@dimen/view_margin"
+                    android:text="@string/email_address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/txt_size_big" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line"
+                android:layout_below="@id/lin_lay"
+                android:layout_marginTop="@dimen/view_margin"
+                android:background="@android:color/darker_gray" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_history_pro"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_lay"
+                android:layout_marginTop="@dimen/view_margin"
+                android:gravity="start|center_vertical"
+                android:text="@string/test_history"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_next_right"
+                app:iconGravity="end"
+                app:iconTint="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line"
+                android:layout_below="@id/btn_history_pro"
+                android:background="@android:color/darker_gray" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_logout_pro"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_history_pro"
+                android:layout_alignParentBottom="true"
+                android:gravity="start|center_vertical"
+                android:text="@string/logout"
+                android:textColor="@color/black"
+                app:icon="@drawable/ic_logout"
+                app:iconGravity="end"
+                app:iconTint="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_line"
+                android:layout_below="@id/btn_logout_pro"
+                android:background="@android:color/darker_gray" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </ScrollView>
+</layout>

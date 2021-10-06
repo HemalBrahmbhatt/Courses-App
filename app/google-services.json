@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "284318350401",
+    "project_id": "courses-app-813d4",
+    "storage_bucket": "courses-app-813d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284318350401:android:dff396e1013afe460c9ac0",
+        "android_client_info": {
+          "package_name": "com.brain.courses_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284318350401-f0q5tu8c3aj893p8br0c5akl39bji9n9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADAC6BCkUr9h9GX4XOgJ4OqCYZBDoRZkg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284318350401-f0q5tu8c3aj893p8br0c5akl39bji9n9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

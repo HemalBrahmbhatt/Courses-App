@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.fragments.NotificationFragment">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_line"
+            android:layout_marginTop="@dimen/view_margin_small"
+            android:background="@android:color/darker_gray" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch_notification"
+            style="@style/Widget.App.Switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_line"
+            android:layout_marginStart="@dimen/view_margin_small"
+            android:layout_marginEnd="@dimen/view_margin_small"
+            android:checked="true"
+            android:text="@string/show_notification"
+            android:textAllCaps="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_line"
+            android:layout_below="@id/switch_notification"
+            android:background="@android:color/darker_gray" />
+    </RelativeLayout>
+</layout>

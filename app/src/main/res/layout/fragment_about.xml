@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.AboutFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:text="@string/app_name"
+        android:textSize="@dimen/txt_size"
+        android:textColor="@color/primaryColor"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_about_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_about"
+        android:layout_marginStart="@dimen/view_margin"
+        android:layout_marginEnd="@dimen/view_margin"
+        android:text="@string/about_us_des"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/view_margin"
+            android:text="@string/made_by"
+            android:textSize="@dimen/txt_size"
+            android:textColor="@color/primaryColor"
+            android:layout_below="@id/txt_about_des"/>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txt_made_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_made"
+            android:layout_marginStart="@dimen/view_margin"
+            android:layout_marginEnd="@dimen/view_margin"
+            android:text="@string/this_application_is_made_by"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size" />
+    </RelativeLayout>
+</ScrollView>
