@@ -1,5 +1,6 @@
 package com.brain.courses_app.view.adapters
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
@@ -44,6 +45,7 @@ class QuestionAdapter(
             binding.btnNextItem.setOnClickListener(this)
         }
 
+        @SuppressLint("SetTextI18n")
         fun bind(question: Questions, position: Int) {
             val questionR = replaceString(question.question)
             val answerR = replaceString(question.correctAnswer)

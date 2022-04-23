@@ -57,7 +57,7 @@ class TestFragment : Fragment(), QuestionAdapter.OnButtonClickListener {
 
     private fun getQuestions(isFirstTime: Boolean) {
         testViewModel.getQuestions(args.subject.id)
-        testViewModel.questionsMutableLiveData.observe(viewLifecycleOwner, {
+        testViewModel.questionsMutableLiveData.observe(viewLifecycleOwner) {
             if (it == emptyList<Questions>()) {
                 if (isFirstTime) {
                     noInternetVisibility()
@@ -65,7 +65,7 @@ class TestFragment : Fragment(), QuestionAdapter.OnButtonClickListener {
             } else {
                 setAdapter(it)
             }
-        })
+        }
     }
 
     private fun tryAgain() {
@@ -114,11 +114,11 @@ class TestFragment : Fragment(), QuestionAdapter.OnButtonClickListener {
                 val date =
                     SimpleDateFormat("dd/MM/yyyy - hh:mm:ss a", Locale.getDefault()).format(Date())
                 testViewModel.getIsChecked()
-                testViewModel.isNotificationCheckedMutableLiveData.observe(viewLifecycleOwner, {
+                testViewModel.isNotificationCheckedMutableLiveData.observe(viewLifecycleOwner) {
                     if (it) {
                         setNotification(date, userAnswerSet)
                     }
-                })
+                }
                 storeResult(date, userAnswerSet)
             } else {
                 viewPager.currentItem += 1
@@ -128,7 +128,7 @@ class TestFragment : Fragment(), QuestionAdapter.OnButtonClickListener {
 
     private fun storeResult(date: String, userAnswers: MutableSet<UserAnswer>) {
         testViewModel.storeResults(date, args.subject, userAnswers.toList())
-        testViewModel.isStoredMutableLiveData.observe(viewLifecycleOwner, {
+        testViewModel.isStoredMutableLiveData.observe(viewLifecycleOwner) {
             if (it) {
                 binding.progressBarTest.visibility = View.GONE
                 findNavController().navigate(
@@ -139,7 +139,7 @@ class TestFragment : Fragment(), QuestionAdapter.OnButtonClickListener {
             } else {
                 binding.progressBarTest.visibility = View.GONE
             }
-        })
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

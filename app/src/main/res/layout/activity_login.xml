@@ -12,13 +12,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/splash_bg">
+
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txt_login_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/login"
                 android:gravity="center"
-                android:textAppearance="@style/collapsingAppBar"/>
+                android:text="@string/login"
+                android:textAppearance="@style/collapsingAppBar" />
 
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/img_logo_login"
@@ -82,7 +83,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/chk_box_remember"
-                android:layout_margin="@dimen/view_margin"
+                android:layout_marginStart="@dimen/view_margin"
+                android:layout_marginTop="@dimen/view_margin"
+                android:layout_marginEnd="@dimen/view_margin"
+                android:layout_marginBottom="@dimen/view_margin"
                 android:text="@string/login"
                 android:textSize="@dimen/txt_size"
                 app:cornerRadius="@dimen/btn_radius" />

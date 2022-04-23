@@ -48,9 +48,9 @@ class DetailFragment : Fragment() {
     private fun setView() {
         binding.apply {
             detailViewModel.getLastDate(args.subject.id)
-            detailViewModel.dateMutableLiveData.observe(viewLifecycleOwner, {
+            detailViewModel.dateMutableLiveData.observe(viewLifecycleOwner) {
                 txtLastDetail.text = getString(R.string.last_test).plus(it)
-            })
+            }
             txtDesDetail.text = args.subject.description
             Glide.with(this@DetailFragment).load(args.subject.logo).into(imgDetail)
             collToolbar.title = args.subject.title

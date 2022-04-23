@@ -10,5 +10,4 @@ class CourseApp : Application() {
         super.onCreate()
         FirebaseAnalytics.getInstance(this)
     }
-
 }

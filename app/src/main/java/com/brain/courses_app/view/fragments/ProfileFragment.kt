@@ -42,11 +42,11 @@ class ProfileFragment : Fragment() {
     private fun setProfileView() {
         profileViewModel.getUser()
         binding.apply {
-            profileViewModel.userMutableLiveData.observe(viewLifecycleOwner, {
+            profileViewModel.userMutableLiveData.observe(viewLifecycleOwner) {
                 progressBarProfile.visibility = View.GONE
                 txtNamePro.text = it?.name
                 txtEmailPro.text = it?.email
-            })
+            }
         }
     }
 

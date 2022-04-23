@@ -62,10 +62,10 @@ class MainActivity : AppCompatActivity() {
             txtEmailNav.setOnClickListener {
                 headerNavigation()
             }
-            mainViewModel.userMutableLiveData.observe(this@MainActivity, {
+            mainViewModel.userMutableLiveData.observe(this@MainActivity) {
                 txtUnameNav.text = it?.name
                 txtEmailNav.text = it?.email
-            })
+            }
         }
 
         navController.addOnDestinationChangedListener { _, destination, _ ->

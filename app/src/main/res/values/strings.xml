@@ -32,7 +32,7 @@
     <string name="gk_logo">https://images-na.ssl-images-amazon.com/images/I/61apfSLOGwL.png</string>
     <string name="gk_title">General Knowledge</string>
     <string name="literature_title">Literature</string>
-    <string name="literature_logo">https://image.flaticon.com/icons/png/512/2232/2232688.png</string>
+    <string name="literature_logo">https://cdn-icons-png.flaticon.com/512/5780/5780976.png</string>
     <string name="literature_description">Literature, a body of written works. The name has traditionally
         been applied to those imaginative works of poetry and prose distinguished by the intentions of
         their authors and the perceived aesthetic excellence of their execution. Literature may be
@@ -43,7 +43,7 @@
         South Asian arts, and Southeast Asian arts. Some literatures are treated separately by language,
         by nation, or by special subject </string>
     <string name="science_title">Science</string>
-    <string name="science_logo">https://image.flaticon.com/icons/png/512/2941/2941552.png</string>
+    <string name="science_logo">https://cdn-icons-png.flaticon.com/512/2941/2941552.png</string>
     <string name="science_description">Science education is the teaching and learning of science to
         non-scientists, such as school children, college students, or adults within the general public.
         The field of science education includes work in science content, science process (the scientific
@@ -52,7 +52,7 @@
         for students through the entire course of their K-12 education and beyond. The traditional subjects
         included in the standards are physical, life, earth, space, and human sciences.</string>
     <string name="computers_title">Computer Science</string>
-    <string name="computer_logo">https://image.flaticon.com/icons/png/512/2471/2471319.png</string>
+    <string name="computer_logo">https://cdn-icons.flaticon.com/png/512/4025/premium/4025644.png?token=exp=1650693980~hmac=2fc21bbcc162bcb5f11744c679ce101e</string>
     <string name="computer_description">Computer science is the study of algorithmic processes,
         computational machines and computation itself. As a discipline, computer science spans a range
         of topics from theoretical studies of algorithms, computation and information to the practical
@@ -63,7 +63,7 @@
         the topics of variables, assignments, conditions, loops, graphical user interfaces, controls,
         and processing scripts are covered.</string>
     <string name="math_title">Mathematics</string>
-    <string name="math_logo">https://image.flaticon.com/icons/png/512/2249/2249539.png</string>
+    <string name="math_logo">https://cdn-icons-png.flaticon.com/512/2861/2861734.png</string>
     <string name="math_description">Topics in mathematics that every educated person needs to know
         to process, evaluate, and understand the numerical and graphical information in our society.
         Applications of mathematics in problem solving, finance, probability, statistics, geometry, population growth.
@@ -75,7 +75,7 @@
         intellectual, religious and military developments are all part of history.
     \n\nThis course looks at the history of famous archaeological discoveries around the world and
         how those discoveries have helped us to understand our shared past and cultural heritage.</string>
-    <string name="history_logo">https://image.flaticon.com/icons/png/512/2332/2332918.png</string>
+    <string name="history_logo">https://cdn-icons-png.flaticon.com/512/2332/2332918.png</string>
     <string name="empty">Empty Fields!!!</string>
     <string name="confirm_error">Confirm Password is not same as Password</string>
     <string name="invalid_email">Invalid Email Address</string>

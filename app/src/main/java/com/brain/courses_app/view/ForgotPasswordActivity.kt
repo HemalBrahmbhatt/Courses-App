@@ -52,13 +52,13 @@ class ForgotPasswordActivity : AppCompatActivity() {
     private fun sentMail(email: String) {
         binding.progressBarForget.visibility = View.VISIBLE
         forgetViewModel.forgetPassword(email)
-        forgetViewModel.isSuccessfulMutableLiveData.observe(this, {
+        forgetViewModel.isSuccessfulMutableLiveData.observe(this) {
             if (it) {
                 binding.progressBarForget.visibility = View.GONE
                 finish()
             } else {
                 binding.progressBarForget.visibility = View.GONE
             }
-        })
+        }
     }
 }

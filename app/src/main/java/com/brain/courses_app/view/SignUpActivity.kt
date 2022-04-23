@@ -24,7 +24,7 @@ class SignUpActivity : AppCompatActivity() {
         _binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        registerViewModel.isRegisteredMutableLiveData.observe(this, {
+        registerViewModel.isRegisteredMutableLiveData.observe(this) {
             if (it) {
                 binding.progressBarSign.visibility = View.GONE
                 Toast.makeText(
@@ -36,7 +36,7 @@ class SignUpActivity : AppCompatActivity() {
             } else {
                 binding.progressBarSign.visibility = View.GONE
             }
-        })
+        }
         binding.apply {
             btnSignup.setOnClickListener {
                 checkAndRegister()

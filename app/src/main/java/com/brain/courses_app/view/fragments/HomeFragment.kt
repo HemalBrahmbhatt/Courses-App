@@ -58,9 +58,9 @@ class HomeFragment : Fragment(), SubjectAdapter.OnItemClickListener {
             adapter = subjectAdapter
         }
         homeViewModel.getSubjectList()
-        homeViewModel.subjects.observe(viewLifecycleOwner, {
+        homeViewModel.subjects.observe(viewLifecycleOwner) {
             subjectAdapter.submitList(it)
-        })
+        }
     }
 
     override fun onItemClick(subject: Subject) {

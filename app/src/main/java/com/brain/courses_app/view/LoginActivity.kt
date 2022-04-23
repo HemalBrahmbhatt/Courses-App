@@ -22,14 +22,14 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         _binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        loginViewModel.isSuccessfulMutableLiveData.observe(this, {
+        loginViewModel.isSuccessfulMutableLiveData.observe(this) {
             if (it) {
                 binding.progressBarLogin.visibility = View.GONE
                 startActivity(Intent(this, MainActivity::class.java)).also { finish() }
             } else {
                 binding.progressBarLogin.visibility = View.GONE
             }
-        })
+        }
         binding.apply {
             btnSign.setOnClickListener {
                 startActivity(Intent(this@LoginActivity, SignUpActivity::class.java))

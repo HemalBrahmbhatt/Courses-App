@@ -27,9 +27,9 @@ class NotificationFragment : Fragment() {
         _binding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_notification, container, false)
         notificationViewModel.getIsChecked()
-        notificationViewModel.isCheckedMutableLiveData.observe(viewLifecycleOwner, {
+        notificationViewModel.isCheckedMutableLiveData.observe(viewLifecycleOwner) {
             binding.switchNotification.isChecked = it
-        })
+        }
         binding.switchNotification.setOnCheckedChangeListener { _, isChecked ->
             notificationViewModel.setShowNotification(isChecked)
         }

@@ -41,11 +41,11 @@ class HistoryFragment : Fragment(), HistoryAdapter.OnItemClickListener {
             adapter = resultAdapter
         }
         historyViewModel.getResult()
-        historyViewModel.results.observe(viewLifecycleOwner, {
+        historyViewModel.results.observe(viewLifecycleOwner) {
             resultAdapter.submitList(it)
             binding.rcvHistory.visibility = View.VISIBLE
             binding.progressBarHistory.visibility = View.GONE
-        })
+        }
     }
 
     override fun onDestroyView() {
