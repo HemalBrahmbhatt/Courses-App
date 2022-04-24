@@ -112,7 +112,8 @@
                     android:gravity="center"
                     android:text="@string/previous"
                     app:cornerRadius="@dimen/btn_radius"
-                    app:icon="@drawable/ic_back" />
+                    app:icon="@drawable/ic_back"
+                    app:iconGravity="top" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_next_item"
@@ -124,7 +125,7 @@
                     android:text="@string/next"
                     app:cornerRadius="@dimen/btn_radius"
                     app:icon="@drawable/ic_next"
-                    app:iconGravity="end" />
+                    app:iconGravity="top" />
             </LinearLayout>
         </RelativeLayout>
 

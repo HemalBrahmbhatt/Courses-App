@@ -95,12 +95,13 @@
     <string name="email_address">Email Address</string>
     <string name="user_pref">UserPref</string>
     <string name="is_logged_in">isLoggedIn</string>
-    <string name="about_us_des">The About Us page of your site is the page where you get to talk
-        about yourself and present how awesome of a person you are. It’s the place that gives you
-        the opportunity to talk about what you do and why it matters.
-\n\n\nEvery successful entrepreneur knows that a well-designed About Us page brings ‘all the boys
-        and gals in the yard’ which means that it acts as the first point of contact between the ‘creator’
-        and the ‘receiver’ or else in marketing terms, the ‘seller’ and the ‘buyer’.</string>
+    <string name="about_us_des">Courses application is quiz application.
+        It is used to take short quizzes in basic subjects like science,
+        mathematics or history and test your knowledge in them.
+        It can be used for academic purposes as well.
+        \n\n\nThis a Demo Application Developed
+        By Shahzad Dhanwani and Hemal Brahmbhatt For Semester 10 Project Development.
+    </string>
     <string name="option_a">option a</string>
     <string name="option_b">option b</string>
     <string name="option_c">option c</string>
@@ -114,7 +115,7 @@
     <string name="submit_all_ans">Please Submit All The Answers</string>
     <string name="show_result">Show Result</string>
     <string name="made_by">Made By</string>
-    <string name="this_application_is_made_by">This Application is made by Hemal Brahmbhatt. Contact Info: \nPhone : 9913635839\nEmail : hemal.brahmbhatt@brainvire.com</string>
+    <string name="this_application_is_made_by">Shahzad Dhanwani \nPhone : 9974629647 \nEmail : shahzaddhanwani99@gmail.com \n\nHemal Brahmbhatt \nPhone : 9913635839\nEmail : hemal.brahmbhatt@brainvire.com</string>
     <string name="retry">Retry</string>
     <string name="leave_test_msg">Are You Sure Do You Want to Leave The Test ?</string>
     <string name="leave_test">Leave The Test</string>
